@@ -1,0 +1,13 @@
+ski_resorts_pipeline:
+  target: dev
+  outputs:
+    dev:
+      account: RONTLZB-LZB06190
+      database: ski_db
+      password: g2JxhK6a8puSA8U
+      role: ski_role
+      schema: staging
+      threads: 10
+      type: snowflake
+      user: MARZELINO10
+      warehouse: ski_wh

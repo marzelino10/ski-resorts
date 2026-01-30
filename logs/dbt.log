@@ -1,0 +1,65 @@
+[0m14:27:38.504666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1782502930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b178484ac30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1782502810>]}
+
+
+============================== 14:27:38.509396 | 253508cf-2aa4-4bb9-8047-ce1d72f8b7b0 ==============================
+[0m14:27:38.509396 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:27:38.510124 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'introspect': 'True', 'invocation_command': 'dbt clean', 'target_path': 'None', 'version_check': 'True', 'static_parser': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_format': 'default', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'printer_width': '80', 'profiles_dir': '/home/marzelino_unix/.dbt', 'empty': 'None', 'cache_selected_only': 'False', 'use_colors': 'True'}
+[0m14:27:38.510677 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/marzelino_unix/repos/ski-resorts/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:27:38.512649 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": false, "command_wall_clock_time": 0.064749, "process_in_blocks": "46224", "process_kernel_time": 0.301174, "process_mem_max_rss": "98996", "process_out_blocks": "8", "process_user_time": 1.410981}
+[0m14:27:38.513093 [debug] [MainThread]: Command `dbt clean` failed at 14:27:38.512999 after 0.07 seconds
+[0m14:27:38.513430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1782626510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1782680b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1781d0b3e0>]}
+[0m14:27:38.513782 [debug] [MainThread]: Flushing usage events
+[0m14:27:39.849711 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:27:47.677757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bffdb99f050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bffdb836f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bffd9219100>]}
+
+
+============================== 14:27:47.680727 | 5603d67f-a239-4836-88a6-f07d0610516b ==============================
+[0m14:27:47.680727 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:27:47.681227 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'partial_parse': 'True', 'use_colors': 'True', 'quiet': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'version_check': 'True', 'profiles_dir': '/home/marzelino_unix/.dbt', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'write_json': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'empty': 'None', 'printer_width': '80', 'log_path': 'logs'}
+[0m14:28:00.056550 [debug] [MainThread]: Starter project path: /home/marzelino_unix/repos/ski-resorts/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:28:00.079566 [info ] [MainThread]: 
+Your new dbt project "ski_resorts_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:28:00.080400 [info ] [MainThread]: Setting up your profile.
+[0m14:28:03.272482 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:28:03.272965 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:28:03.273381 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:29:04.738675 [info ] [MainThread]: Profile ski_resorts_pipeline written to /home/marzelino_unix/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:29:04.741659 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 77.118675, "process_in_blocks": "17376", "process_kernel_time": 0.331436, "process_mem_max_rss": "123024", "process_out_blocks": "80", "process_user_time": 1.552092}
+[0m14:29:04.742807 [debug] [MainThread]: Command `dbt init` succeeded at 14:29:04.742653 after 77.12 seconds
+[0m14:29:04.743270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bffd7761f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bffd75d2480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bffd7695be0>]}
+[0m14:29:04.743865 [debug] [MainThread]: Flushing usage events
+[0m14:29:06.344531 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:39:04.673512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e5c428a7e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e5c40ff6b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e5c5fff1a0>]}
+
+
+============================== 19:39:04.677330 | d72fd00b-fd3b-42d5-8d53-37b96c60ad2c ==============================
+[0m19:39:04.677330 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:39:04.677907 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'introspect': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'warn_error': 'None', 'debug': 'False', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': '/home/marzelino_unix/.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'no_print': 'None', 'write_json': 'True', 'log_cache_events': 'False'}
+[0m19:39:04.678381 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/marzelino_unix/repos/ski-resorts/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:39:04.679259 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.0720877, "process_in_blocks": "24", "process_kernel_time": 0.285172, "process_mem_max_rss": "99352", "process_out_blocks": "8", "process_user_time": 1.879731}
+[0m19:39:04.679742 [debug] [MainThread]: Command `dbt run` failed at 19:39:04.679623 after 0.07 seconds
+[0m19:39:04.680116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e5c3c416a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e5c351b3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78e5c3a754c0>]}
+[0m19:39:04.680530 [debug] [MainThread]: Flushing usage events
+[0m19:39:06.103048 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,7 @@
+sources:
+  - name: staging   
+    database: ski_db
+    schema: staging
+    tables:
+      - name: ski_resorts
+      - name: ski_snow
