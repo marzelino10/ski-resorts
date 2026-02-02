@@ -1,0 +1,22 @@
+models:
+    - name: bronze_ski_resorts
+      columns:
+        - name: resort_id
+          tests:
+            - not_null
+            - unique
+        - name: resort
+          tests:
+            - not_null
+        - name: latitude
+          tests:
+            - not_null
+        - name: longitude
+          tests:
+            - not_null
+        - name: continent
+          tests:
+            - not_null
+            - accepted_values:
+                values: ['Asia', 'Europe', 'Africa', 'North America', 'South America', 'Oceania']
+        

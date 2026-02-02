@@ -5,7 +5,7 @@ ski_resorts_pipeline:
       account: RONTLZB-LZB06190
       database: ski_db
       password: g2JxhK6a8puSA8U
-      role: ski_role
+      role: ACCOUNTADMIN
       schema: staging
       threads: 10
       type: snowflake
