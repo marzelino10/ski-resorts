@@ -1,5 +1,5 @@
 models:
-    - name: bronze_ski_resorts
+    - name: bronze_resorts
       columns:
         - name: resort_id
           tests:
