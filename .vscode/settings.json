@@ -1,0 +1,7 @@
+{
+    "dbt.queryLimit": 100,
+    "dbt.perspectiveTheme": "Vintage",
+    "terminal.integrated.cursorStyle": "line",
+    "dbt.enableNewLineagePanel": true,
+    "dbt.lineage.defaultExpansion": 2
+}
