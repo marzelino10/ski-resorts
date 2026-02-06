@@ -1,5 +1,6 @@
 models:
     - name: bronze_resorts
+      description: Raw resort table from S3, containing all information about ski resort from all around the world
       columns:
         - name: resort_id
           tests:
@@ -19,4 +20,18 @@ models:
             - not_null
             - accepted_values:
                 values: ['Asia', 'Europe', 'Africa', 'North America', 'South America', 'Oceania']
-        
+    - name: bronze_snow
+      description: Raw snow table from S3, containing snow coverage percentage for a 0.25 x 0.25 degrees grid in a given month
+      columns:
+        - name: month
+          tests:
+            - not_null
+        - name: latitude
+          tests:
+            - not_null
+        - name: longitude
+          tests:
+            - not_null
+        - name: snow
+          tests:
+            - not_null

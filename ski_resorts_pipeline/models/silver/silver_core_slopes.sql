@@ -2,11 +2,11 @@ WITH distinct_slope AS (
     SELECT
         DISTINCT
             resort_id,
-            beginner_slopes_km,
-            intermediate_slopes_km,
-            difficult_slopes_km
+            beginner_slopes AS beginner_slopes_km,
+            intermediate_slopes AS intermediate_slopes_km,
+            difficult_slopes AS difficult_slopes_km
     FROM
-        {{ ref("silver_resorts") }}
+        {{ ref("bronze_resorts") }}
 )
 
 SELECT

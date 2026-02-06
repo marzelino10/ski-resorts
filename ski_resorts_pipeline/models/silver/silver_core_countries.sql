@@ -1,10 +1,17 @@
+{% set string_columns = [
+    'country',
+    'continent'
+]
+%}
+
 WITH distinct_country AS (
     SELECT
         DISTINCT
-            country,
-            continent
+        {% for string_column in string_columns %}
+        {{ cleaner(string_column) }} AS {{ string_column }} {% if not loop.last %}, {% endif %}
+        {% endfor %}
     FROM 
-        {{ ref("silver_resorts")}}
+        {{ ref("bronze_resorts")}}
 )
 
 SELECT

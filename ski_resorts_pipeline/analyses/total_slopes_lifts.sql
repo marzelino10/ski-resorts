@@ -6,7 +6,7 @@ WITH a AS (
         surface_lifts + chair_lifts + gondola_lifts AS calc_total_lifts,
         total_lifts
     FROM
-        {{ ref("silver_resorts") }})
+        {{ ref("bronze_resorts") }})
 
 SELECT 
     *

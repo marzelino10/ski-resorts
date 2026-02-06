@@ -3,12 +3,12 @@ WITH distinct_feature AS (
         DISTINCT
             resort_id,
             snow_cannons,
-            is_child_friendly,
-            has_snowparks,
-            has_nightskiing,
-            has_summer_skiing
+            child_friendly AS is_child_friendly,
+            snowparks AS has_snowparks,
+            nightskiing AS has_nightskiing,
+            summer_skiing AS has_summer_skiing
     FROM
-        {{ ref("silver_resorts") }}
+        {{ ref("bronze_resorts") }}
 )
 
 SELECT

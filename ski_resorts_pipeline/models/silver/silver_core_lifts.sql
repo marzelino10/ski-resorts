@@ -7,7 +7,7 @@ WITH distinct_lift AS (
             gondola_lifts,
             lift_capacity
     FROM
-        {{ ref("silver_resorts")}}
+        {{ ref("bronze_resorts")}}
 )
 
 SELECT

@@ -2,11 +2,11 @@ WITH distinct_terrain AS (
     SELECT
         DISTINCT
             resort_id,
-            lowest_point_m,
-            highest_point_m,
-            longest_run_km
+            lowest_point AS lowest_point_m,
+            highest_point AS highest_point_m,
+            longest_run AS longest_run_km
     FROM
-        {{ ref("silver_resorts") }}
+        {{ ref("bronze_resorts") }}
 )
 
 SELECT
