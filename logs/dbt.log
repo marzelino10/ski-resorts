@@ -79,3 +79,27 @@ Runtime Error
 [0m10:36:41.432165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d485336d460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d485336c1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d485294f200>]}
 [0m10:36:41.432543 [debug] [MainThread]: Flushing usage events
 [0m10:36:42.741297 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:43:46.912308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a7781296750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a777ffb8b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a7780286de0>]}
+
+
+============================== 22:43:46.916131 | af4988be-c870-4995-8855-aae374f61903 ==============================
+[0m22:43:46.916131 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:43:46.916778 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'target_path': 'None', 'introspect': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'write_json': 'True', 'log_path': 'logs', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'no_print': 'None', 'use_colors': 'True', 'quiet': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/marzelino_unix/.dbt', 'empty': 'None', 'version_check': 'True'}
+[0m22:43:46.926174 [info ] [MainThread]: dbt version: 1.11.2
+[0m22:43:46.926914 [info ] [MainThread]: python version: 3.12.3
+[0m22:43:46.927457 [info ] [MainThread]: python path: /home/marzelino_unix/repos/ski-resorts/.venv/bin/python3
+[0m22:43:46.928071 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m22:43:47.260813 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:43:47.261321 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:43:47.261766 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:43:47.324264 [info ] [MainThread]: Using profiles dir at /home/marzelino_unix/.dbt
+[0m22:43:47.324773 [info ] [MainThread]: Using profiles.yml file at /home/marzelino_unix/.dbt/profiles.yml
+[0m22:43:47.325205 [info ] [MainThread]: Using dbt_project.yml file at /home/marzelino_unix/repos/ski-resorts/dbt_project.yml
+[0m22:43:47.325722 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m22:43:47.326644 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.46942645, "process_in_blocks": "16488", "process_kernel_time": 0.253271, "process_mem_max_rss": "124636", "process_out_blocks": "16", "process_user_time": 1.515609}
+[0m22:43:47.327235 [debug] [MainThread]: Command `dbt debug` failed at 22:43:47.327140 after 0.47 seconds
+[0m22:43:47.327641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a777f739730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a777dbc2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a777db0d730>]}
+[0m22:43:47.328058 [debug] [MainThread]: Flushing usage events
+[0m22:43:48.819103 [debug] [MainThread]: An error was encountered while trying to flush usage events

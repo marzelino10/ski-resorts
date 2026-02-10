@@ -1,0 +1,13 @@
+ski_resorts_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      threads: 10
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WH') }}"
+      database: "{{ env_var('SNOWFLAKE_DB') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
