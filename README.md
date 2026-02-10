@@ -15,6 +15,15 @@ The primary focus of this project is **data architecture, transformation quality
 
 ---
 
+## 📘 Project Documentation
+
+Full project documentation is available here:
+
+👉 **Live Documentation:**  
+[![Repo Docs](https://img.shields.io/badge/repo_docs-005FF9?style=for-the-badge&logo=googlechrome&logoColor=white)](https://marzelino10.github.io/ski-resorts/)
+
+---
+
 ## 🏗️ Data Architecture
 
 Source data is obtained from the  
@@ -70,9 +79,14 @@ ski-resorts/
 │   ├── snow.csv                      # Monthly snow coverage data in 2020
 │
 ├── docs/                             # Documentation and visuals                       
-│   ├── data_dictionary.csv           # Field-level metadata
-│   ├── data_architecture.png         # Pipeline architecture diagram
-│   ├── dbt_dag.png                   # dbt lineage graph
+│   ├── architecture                  
+│   │   ├── data_dictionary.csv       # Field-level metadata
+│   │   ├── data_architecture.png     # Pipeline architecture diagram
+│   │   ├── dbt_dag.png               # dbt lineage graph
+│   │   
+│   ├── dbt/                          # dbt docs assets             
+│   │              
+│   ├── index.html                    # Landing page        
 │
 ├── ski_resorts_pipeline/             # dbt project directory (More on this in the directory itself)
 │

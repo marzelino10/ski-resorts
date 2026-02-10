@@ -8,6 +8,16 @@ The focus of this dbt project is:
 - Data quality and consistency
 - Clear separation of concerns (bronze / silver / gold)
 - Business-oriented analytical modeling
+  
+---
+
+## 📘 dbt Documentation
+
+The full dbt documentation (models, lineage, tests, and descriptions) is hosted here:
+
+👉 **Live dbt Docs:**  
+[![dbt Docs](https://img.shields.io/badge/dbt_docs-005FF9?style=for-the-badge&logo=googlechrome&logoColor=white)](https://marzelino10.github.io/ski-resorts/dbt)
+
 ---
 
 ## 📂 dbt Repository Structure
