@@ -8,13 +8,13 @@ WITH base AS (
         difficult_slopes_km,
         TO_NUMBER(is_child_friendly) AS is_child_friendly,
     FROM
-        {{ ref("silver_core_terrain") }} AS t
+        {{ ref("silver_terrains") }} AS t
     JOIN
-        {{ ref("silver_core_slopes") }} AS s
+        {{ ref("silver_slopes") }} AS s
         ON 
             t.resort_id = s.resort_id
     JOIN 
-        {{ ref("silver_core_features") }} AS f
+        {{ ref("silver_features") }} AS f
         ON
             t.resort_id = f.resort_id
 ),

@@ -4,9 +4,9 @@ WITH resort_geopoint AS (
         resort,
         geopoint
     FROM 
-        {{ ref("silver_core_resorts") }} AS cr
+        {{ ref("silver_resorts") }} AS cr
     LEFT JOIN
-        {{ ref("silver_core_locations") }} AS cl
+        {{ ref("silver_locations") }} AS cl
     ON 
         cr.location_id = cl.location_id
 ),
@@ -16,9 +16,9 @@ snow_geopoint AS (
         snow_coverage_perc,
         geopoint
     FROM
-        {{ ref("silver_core_snow") }} AS cs
+        {{ ref("silver_snow") }} AS cs
     LEFT JOIN
-        {{ ref("silver_core_locations") }} AS cl
+        {{ ref("silver_locations") }} AS cl
     ON 
         cs.location_id = cl.location_id
 )

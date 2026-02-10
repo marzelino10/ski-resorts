@@ -5,7 +5,7 @@ SELECT
 FROM
     {{ ref("bronze_snow") }} AS s 
 LEFT JOIN
-    {{ ref("silver_core_locations") }} AS cl
+    {{ ref("silver_locations") }} AS cl
 ON 
     s.latitude = cl.latitude
 AND 

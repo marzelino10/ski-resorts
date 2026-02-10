@@ -18,7 +18,7 @@ SELECT
     season_start_month,
     season_end_month
 FROM
-    {{ ref("silver_core_resorts") }}
+    {{ ref("silver_resorts") }}
 CROSS JOIN calendar_months
 ORDER BY
     resort_id,

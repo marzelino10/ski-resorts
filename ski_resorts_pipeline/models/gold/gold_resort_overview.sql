@@ -13,28 +13,28 @@ SELECT
     has_nightskiing,
     has_summer_skiing,
 FROM
-    {{ ref("silver_core_resorts") }} AS cr
+    {{ ref("silver_resorts") }} AS cr
 LEFT JOIN
-    {{ ref("silver_core_locations") }} AS cl
+    {{ ref("silver_locations") }} AS cl
     ON 
         cr.location_id = cl.location_id
 LEFT JOIN
-    {{ ref("silver_core_countries") }} AS cc
+    {{ ref("silver_countries") }} AS cc
     ON 
         cl.country_id = cc.country_id
 LEFT JOIN
-    {{ ref("silver_core_terrain") }} AS ct
+    {{ ref("silver_terrains") }} AS ct
     ON
         cr.terrain_id = ct.terrain_id
 LEFT JOIN
-    {{ ref("silver_core_slopes") }} AS cs
+    {{ ref("silver_slopes") }} AS cs
     ON
         cr.slope_id = cs.slope_id
 LEFT JOIN
-    {{ ref("silver_core_lifts") }} AS cli
+    {{ ref("silver_lifts") }} AS cli
     ON
         cr.lift_id = cli.lift_id
 LEFT JOIN
-    {{ ref("silver_core_features") }} AS cf
+    {{ ref("silver_features") }} AS cf
     ON
         cr.feature_id = cf.feature_id

@@ -41,24 +41,24 @@ LEFT JOIN
     flatten_seasons AS fs
     ON r.resort_id = fs.resort_id
 LEFT JOIN
-    {{ ref("silver_core_locations") }} AS cl
+    {{ ref("silver_locations") }} AS cl
     ON 
         r.latitude = cl.latitude
     AND r.longitude = cl.longitude
 LEFT JOIN
-    {{ ref("silver_core_terrain") }} AS ct
+    {{ ref("silver_terrains") }} AS ct
     ON
         r.resort_id = ct.resort_id
 LEFT JOIN
-    {{ ref("silver_core_slopes") }} AS cs
+    {{ ref("silver_slopes") }} AS cs
     ON
         r.resort_id = cs.slope_id
 LEFT JOIN
-    {{ ref("silver_core_lifts") }} AS cli
+    {{ ref("silver_lifts") }} AS cli
     ON
         r.resort_id = cli.resort_id
 LEFT JOIN
-    {{ ref("silver_core_features") }} AS cf
+    {{ ref("silver_features") }} AS cf
     ON
         r.resort_id = cf.resort_id
 ORDER BY 

@@ -15,7 +15,7 @@ countries_with_id AS (
     FROM
         distinct_countries AS dc
     LEFT JOIN
-        {{ ref("silver_core_countries") }} AS cc
+        {{ ref("silver_countries") }} AS cc
     ON
         dc.country = cc.country
 ),

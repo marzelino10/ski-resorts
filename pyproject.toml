@@ -1,7 +1,7 @@
 [project]
 name = "ski-resorts"
 version = "0.1.0"
-description = "Add your description here"
+description = "Ski Resorts data engineering pipeline using AWS, Snowflake, and dbt"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
