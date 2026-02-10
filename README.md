@@ -24,7 +24,7 @@ and stored in **Amazon S3** as the system of record.
 The pipeline follows the **Medallion Architecture (Bronze → Silver → Gold)** pattern and is implemented using **Snowflake** and **dbt**.
 
 
-![Data Architecture](docs/data_architecture.png)
+![Data Architecture](docs/architecture/data_architecture.png)
 
 
 ### 🥉 Bronze Layer
