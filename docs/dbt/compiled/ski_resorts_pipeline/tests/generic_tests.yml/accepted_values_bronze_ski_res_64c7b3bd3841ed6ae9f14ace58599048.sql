@@ -1,0 +1,22 @@
+
+    
+    
+
+with all_values as (
+
+    select
+        continent as value_field,
+        count(*) as n_records
+
+    from ski_db.staging_bronze.bronze_ski_resorts
+    group by continent
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Asia','Europe','Africa','North America','South America','Oceania'
+)
+
+
