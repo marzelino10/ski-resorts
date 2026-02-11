@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates a **production-style, end-to-end data engineering pipeline** built to ingest, transform, and model **global ski resort and snow coverage data** for analytics and decision-making using **Snowflake** and **dbt**.
+This project demonstrates a **production-style, end-to-end data engineering pipeline** built to ingest, transform, and model **global ski resort and snow coverage data** for analytics and decision-making using **AWS**, **Snowflake** and **dbt**.
 
 The pipeline is designed to answer real-world analytical questions such as:
 
