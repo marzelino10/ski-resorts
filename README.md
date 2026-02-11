@@ -83,6 +83,9 @@ ski-resorts/
 │   │   ├── data_dictionary.csv       # Field-level metadata
 │   │   ├── data_architecture.png     # Pipeline architecture diagram
 │   │   ├── dbt_dag.png               # dbt lineage graph
+│   │   ├── dbt_build.png             # successful dbt build screenshot
+│   │   ├── s3_bucket.png             # S3 bucket screenshot
+│   │   ├── snowflake_ingestion.png   # Snowflake screenshot
 │   │   
 │   ├── dbt/                          # dbt docs assets             
 │   │              
